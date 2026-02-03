@@ -45,7 +45,11 @@ const TransmissionLogs = () => {
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
+                            transition={{
+                                delay: i * 0.15,
+                                duration: 0.8,
+                                ease: [0.16, 1, 0.3, 1]
+                            }}
                             className="glass p-8 md:p-12 rounded-[40px] flex flex-col justify-between group hover:border-cyber-purple/30 transition-all"
                         >
                             <div className="mb-10">

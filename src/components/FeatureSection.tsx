@@ -97,12 +97,13 @@ const FeatureSection = () => {
                         <motion.div
                             key={index}
                             whileHover={{
-                                rotateX: 10,
-                                rotateY: -10,
-                                scale: 1.05,
-                                transition: { duration: 0.3 }
+                                rotateX: 5,
+                                rotateY: -5,
+                                scale: 1.02,
+                                transition: { duration: 0.2 }
                             }}
-                            style={{ transformStyle: "preserve-3d" }}
+                            whileTap={{ scale: 0.98 }}
+                            style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
                             className={`glass p-10 rounded-[30px] transition-all group relative overflow-hidden cursor-default feature-card opacity-0 hover:${feature.glow.replace('shadow', 'border')}`}
                         >
                             <div className={`absolute -right-4 -top-4 w-32 h-32 bg-white/5 rounded-full blur-2xl group-hover:${feature.accent} transition-colors duration-500`} />
