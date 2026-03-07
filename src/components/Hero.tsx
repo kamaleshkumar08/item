@@ -92,7 +92,7 @@ const Hero = () => {
                         animate="visible"
                         className="text-5xl md:text-8xl font-black tracking-tighter leading-[0.9] uppercase italic relative group max-w-6xl mx-auto flex flex-wrap justify-center gap-4 md:gap-8"
                     >
-                        {"ENGINEER YOUR EVOLUTION".split(" ").map((word, index) => (
+                        {"YOUR POTENTIAL IS DECAYING.".split(" ").map((word, index) => (
                             <span key={index} className="inline-block whitespace-nowrap">
                                 {word.split("").map((char, index) => (
                                     <motion.span variants={child} key={index} className="inline-block">
@@ -110,7 +110,7 @@ const Hero = () => {
                     transition={{ delay: 0.4, duration: 1 }}
                     className="text-gray-400 text-lg md:text-2xl max-w-3xl mx-auto mb-14 font-medium leading-relaxed"
                 >
-                    Master deep work protocols, execute daily neuro-quests, and <span className="text-white italic text-glow">evolve your digital daemon.</span> This is the definitive system upgrade for high-performance human consciousness.
+                    Stop managing time. <span className="text-white italic text-glow">Start hacking your dopamine.</span> This is the definitive system upgrade to eliminate cheap gratification and force high-performance execution.
                 </motion.p>
 
                 <motion.div
@@ -124,14 +124,14 @@ const Hero = () => {
                             className="group relative px-12 py-7 bg-white text-black font-black text-xl rounded-2xl overflow-hidden transition-all hover:scale-105 active:scale-95 flex items-center gap-3"
                         >
                             <div className="absolute inset-0 bg-gradient-to-r from-cyber-primary via-cyber-secondary to-cyber-primary translate-y-[101%] group-hover:translate-y-0 transition-transform duration-500 ease-[0.16, 1, 0.3, 1]" />
-                            <span className="relative z-10 group-hover:text-black transition-colors duration-300">UNLOCK PROTOCOL</span>
+                            <span className="relative z-10 group-hover:text-black transition-colors duration-300">INITIALIZE CORE SYSTEM</span>
                             <ChevronRight className="relative z-10 group-hover:translate-x-2 transition-transform duration-500 group-hover:text-black" />
                         </a>
-                        <button className="group px-12 py-7 glass font-black text-xl rounded-2xl hover:bg-white/5 transition-all border border-white/10 flex items-center gap-3 relative overflow-hidden">
+                        <a href="#features" className="group px-12 py-7 glass font-black text-xl rounded-2xl hover:bg-white/5 transition-all border border-white/10 flex items-center gap-3 relative overflow-hidden">
                             <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-cyber-secondary via-cyber-primary to-cyber-secondary translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                            <span className="relative z-10">VIEW SPECS</span>
+                            <span className="relative z-10">VIEW SYSTEM ARCHITECTURE</span>
                             <Shield size={20} className="relative z-10 text-gray-500 group-hover:text-cyber-primary transition-colors" />
-                        </button>
+                        </a>
                     </div>
                 </motion.div>
             </div>

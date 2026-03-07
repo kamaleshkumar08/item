@@ -56,9 +56,9 @@ const Offer = () => {
                     <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-cyber-secondary opacity-5 blur-[100px] rounded-full" />
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-br from-cyber-primary/5 via-transparent to-cyber-secondary/5 pointer-events-none" />
 
-                    <h2 className="text-5xl md:text-7xl font-black mb-8 leading-[0.95] tracking-tighter offer-item opacity-0">
+                    <h2 className="text-5xl md:text-8xl font-black mb-8 leading-[0.95] tracking-tighter uppercase italic offer-item opacity-0">
                         BREAK THE <br />
-                        <span className="text-cyber-primary italic">CYCLES.</span>
+                        <span className="text-cyber-primary drop-shadow-[0_0_15px_rgba(57,255,20,0.5)]">CYCLES.</span>
                     </h2>
 
                     <p className="text-gray-400 text-xl mb-16 max-w-2xl mx-auto font-medium offer-item opacity-0">
@@ -113,15 +113,17 @@ const Offer = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{
-                                scale: 1.05,
-                                boxShadow: "0 0 80px rgba(57, 255, 20, 0.4), 0 0 120px rgba(240, 240, 240, 0.2)"
+                                scale: 1.02,
+                                boxShadow: "0 0 60px rgba(57, 255, 20, 0.8), inset 0 0 20px rgba(57, 255, 20, 0.5)"
                             }}
-                            whileTap={{ scale: 0.95 }}
-                            className="relative w-full md:w-auto px-20 py-8 group overflow-hidden bg-white text-black font-black text-3xl rounded-[25px] flex items-center justify-center gap-4 transition-all offer-item opacity-0 cursor-pointer"
+                            whileTap={{ scale: 0.98 }}
+                            className="relative w-full md:w-auto px-20 py-8 bg-cyber-primary text-cyber-black font-black text-3xl md:text-4xl rounded-[25px] flex items-center justify-center gap-4 transition-all offer-item opacity-0 cursor-pointer hover-glitch border-2 border-cyber-primary shadow-[0_0_30px_rgba(57,255,20,0.4)] animate-pulse-fast uppercase tracking-widest"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-r from-cyber-primary via-cyber-secondary to-cyber-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[0.16, 1, 0.3, 1]" />
-                            <Rocket size={32} className="relative z-10 group-hover:text-black transition-colors" />
-                            <span className="relative z-10 group-hover:text-black transition-colors">INITIATE ASCENSION</span>
+                            <Rocket size={36} className="relative z-10" />
+                            <span className="relative z-10">INITIATE ASCENSION</span>
+
+                            {/* Aggressive inner glow ring that pulses */}
+                            <div className="absolute inset-0 rounded-[23px] border-4 border-white/20 animate-ping opacity-50" style={{ animationDuration: '1.5s' }} />
                         </motion.a>
                         <div className="space-y-4 mt-4">
                             <p className="text-gray-600 text-[10px] font-bold uppercase tracking-[0.2em]">Secure Checkout • Encrypted Protocol • No questions asked</p>

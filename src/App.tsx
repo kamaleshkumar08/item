@@ -1,6 +1,7 @@
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import ProblemAgitation from './components/ProblemAgitation';
 import FeatureSection from './components/FeatureSection';
 import SystemVisualizer from './components/SystemVisualizer';
 import Offer from './components/Offer';
@@ -10,14 +11,17 @@ import Marquee from './components/Marquee';
 import HierarchyComparison from './components/HierarchyComparison';
 import TransmissionLogs from './components/TransmissionLogs';
 import FinalPush from './components/FinalPush';
+import ScrollDaemon from './components/ScrollDaemon';
 
 function App() {
   return (
     <main className="bg-cyber-black min-h-screen relative overflow-hidden">
+      <ScrollDaemon />
       <MouseGlow />
       <NoiseOverlay />
       <Navbar />
       <Hero />
+      <ProblemAgitation />
       <Marquee text="System Integrity: 100% • Focus Sanctum Active • Quest Board Updated • Join the Elite Hierarchy" />
       <SystemVisualizer />
       <HierarchyComparison />

@@ -10,7 +10,7 @@ const features = [
         color: "text-cyber-primary",
         glow: "shadow-cyber-primary/20",
         accent: "bg-cyber-primary/20",
-        description: "Deploy a high-stakes focus environment. Every hour of deep work quantifies your progress, feeding the growth of your personal Daemon avatar."
+        description: "Forcibly trigger deep work flow states. We lock your attention into a high-stakes environment where lost focus means decaying stats."
     },
     {
         icon: <Sword />,
@@ -18,7 +18,7 @@ const features = [
         color: "text-cyber-secondary",
         glow: "shadow-cyber-secondary/20",
         accent: "bg-cyber-secondary/20",
-        description: "Standardized missions across physical, cognitive, and creative domains. Earn XP through tangible daily progress and domain mastery."
+        description: "Hijack your brain's reward center. Turn mundane daily tasks into high-feedback neuro-quests that replace cheap scrolling with productive gratification."
     },
     {
         icon: <Ghost />,
@@ -80,7 +80,7 @@ const FeatureSection = () => {
     }, []);
 
     return (
-        <section id="features" className="py-24 relative overflow-hidden">
+        <section id="features" ref={sectionRef} className="py-24 relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -88,8 +88,8 @@ const FeatureSection = () => {
                     viewport={{ once: true }}
                     className="text-center mb-20"
                 >
-                    <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">THE CORE SYSTEMS</h2>
-                    <p className="text-gray-500 max-w-2xl mx-auto">A comprehensive architecture for total self-mastery.</p>
+                    <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">THE ASCENSION ARCHITECTURE</h2>
+                    <p className="text-gray-500 max-w-2xl mx-auto">These aren't features. They are system upgrades for your consciousness.</p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
